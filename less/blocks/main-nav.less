@@ -1,0 +1,48 @@
+.main-nav {
+  display: none;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-nav__list,
+.main-nav__user-list {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__list {
+  min-height: 158px; /*временно*/
+  outline: 2px dashed orange; /*временно*/
+}
+
+.main-nav__user-list {
+  min-height: 158px; /*временно*/
+  outline: 2px dashed purple; /*временно*/
+}
+
+.main-nav__item {
+  padding-top: 28px;
+  padding-bottom: 27px;
+  padding-left: 46px;
+  list-style: none;
+  border-bottom: 1px solid red; /*красный цвет временный*/
+
+  &--delivery {
+    display: none;
+  }
+}
+
+.main-nav__user-item {
+  padding-top: 28px;
+  padding-bottom: 27px;
+  padding-left: 46px;
+  list-style: none;
+}
+
+@media @tablet-widths {
+  .main-nav {
+    width: auto;
+    min-height: 88px;
+    margin: 0;
+  }
+}
