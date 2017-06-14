@@ -1,5 +1,9 @@
 .contacts {
-  outline: 2px dotted red; /* временное выделение блоков, УДАЛИТЬ! */
+
+}
+
+.contacts__wrapper {
+  .container();
 }
 
 .contacts__title {
@@ -25,5 +29,21 @@
     margin: 0 auto;
     width: 320px;
     height: 457px;
+  }
+}
+
+@media @tablet-widths {
+  .contacts__wrapper {
+    min-height: 824px; /*временно для сетки*/
+    margin-top: 46px;
+    margin-bottom: 57px;
+  }
+}
+
+@media @desktop-widths {
+  .contacts__wrapper {
+    min-height:  457px;
+    margin-top: 71px;
+    margin-bottom: 105px;
   }
 }

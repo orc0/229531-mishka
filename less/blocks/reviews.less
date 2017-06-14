@@ -1,15 +1,25 @@
 .reviews {
-  outline: 2px dotted red; /* временное выделение блоков, УДАЛИТЬ! */
+
+}
+
+.reviews__wrapper {
+  .container();
 }
 
 .reviews__title {
+  margin: 0;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
   color: @black-color;
 }
 
+.reviews__item {
+  margin: 0;
+}
+
 .reviews__text {
+  margin: 0;
   font-size: 15px;
   line-height: 30px;
   font-weight: normal;
@@ -29,3 +39,19 @@
   color: @black-color;
   text-decoration: none;
 }
+
+@media @tablet-widths {
+  .reviews__wrapper {
+    min-height: 457px; /*временно для сетки*/
+    padding-bottom: 85px;
+  }
+}
+
+@media @desktop-widths {
+  .reviews__wrapper {
+    min-height: 457px; /*временно для сетки*/
+    padding-bottom: 90px;
+  }
+}
+
+
