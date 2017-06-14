@@ -1,7 +1,7 @@
 body {
-  background: @white-color url("../preview/mishka-index-mobile.jpg") no-repeat 50% 0px;
-  background-size: 320px auto;
-  min-height: 750px;
+/*   background: @white-color url("../preview/mishka-index-mobile(2).png") no-repeat 50% 0px;
+background-size: 320px auto;
+min-height: 750px; */
 }
 
 @media @tablet-widths {
@@ -17,3 +17,69 @@ body {
     background-size: 1150px auto;
   }
 }
+
+/* начало временного стилевого блока */
+
+.main-nav__wrapper {
+  outline: 3px dashed darkblue; /*временно*/
+}
+
+@media @tablet-widths {
+  .main-nav__wrapper {
+    outline: 3px dashed darkred; /*временно*/
+  }
+}
+
+@media @desktop-widths {
+  .main-nav__wrapper {
+    outline: 3px dashed black; /*временно*/
+  }
+}
+
+.main-nav__list {
+  min-height: 158px; /*временно*/
+  outline: 2px dotted orange; /*временно*/
+}
+
+.main-nav__user-list {
+  min-height: 158px; /*временно*/
+  outline: 2px dotted orange; /*временно*/
+}
+
+.promo-block__wrapper {
+  outline: 3px dashed darkblue; /* временное выделение блоков, УДАЛИТЬ! */
+}
+
+@media @tablet-widths {
+  .promo-block__wrapper {
+    outline: 3px dashed darkred; /*временно*/
+  }
+}
+
+@media @desktop-widths {
+  .promo-block__wrapper {
+    outline: 3px dashed black; /*временно*/
+  }
+}
+
+.bestseller__wrapper {
+  outline: 3px dashed darkblue;
+}
+
+@media @tablet-widths {
+  .bestseller__wrapper {
+    outline: 3px dashed darkred; /*временно*/
+  }
+}
+
+@media @desktop-widths {
+  .bestseller__wrapper {
+    outline: 3px dashed black; /*временно*/
+  }
+}
+
+.features__wrapper {
+  outline: 3px dashed darkblue;
+}
+
+/* конец временного стилевого блока */

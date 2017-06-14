@@ -1,15 +1,28 @@
 .promo-block {
-  outline: 2px dotted blue; /* временное выделение блоков, УДАЛИТЬ! */
   width: 320px;
   margin: 0 auto;
 }
 
-.promo-block__promo-image {
-  min-height: 282px;
+.promo-block__wrapper {
+  min-height: 490px;
   padding-top: 75px;
   background-image: url("../../img/hero-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.promo-block__header {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  a {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: bold;
+    color: @black-color;
+    text-decoration: none;
+  }
 }
 
 .promo-block__title {
@@ -18,24 +31,32 @@
 }
 
 .promo-block__link-title {
-  font-size: 19px;
-  line-height: 24px;
-  color: @white-color;
+/*   font-size: 19px;
+line-height: 24px;
+color: @white-color; */
 }
 
 .promo-block__item {
-  outline: 2px dotted blue; /* временное выделение блоков, УДАЛИТЬ! */
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
+/*   padding-top: 30px;
+padding-bottom: 30px;
+padding-left: 30px;
 
-  &--left {
-    background-color: #63d1bb;
-  }
-  &--right {
-    background-color: #56c3b2;
-  }
+&--left {
+  background-color: #63d1bb;
+}
+&--right {
+  background-color: #56c3b2;
+} */
 }
 
+@media @tablet-widths {
+  .promo-block {
+    width: auto;
+    margin: 0;
+  }
+  .promo-block__wrapper {
+    .container();
+  }
+}
 
 
