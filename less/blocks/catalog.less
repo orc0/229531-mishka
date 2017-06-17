@@ -1,67 +1,90 @@
-.page-title {
-  outline: 2px dotted blue; /* временное выделение блоков, УДАЛИТЬ! */
-  background-color: #f1f1f1;
-}
-
-.page-title__caption {
-  font-size: 27px;
-  line-height: 30px;
-  font-weight: bold;
-}
-
 .catalog {
   outline: 2px dotted red; /* временное выделение блоков, УДАЛИТЬ! */
 }
 
-.product-card {
-  outline: 2px dotted green; /* временное выделение блоков, УДАЛИТЬ! */
-  padding-top: 27px;
-  padding-bottom: 27px;
-  border: 1px solid #ededed;
+.catalog__wrapper {
+  .container();
 }
 
-.product-card__title {
+.catalog__list {
   margin: 0;
-  padding-left: 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-item {
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 1px solid #ededed;
+  /*box-sizing: border-box;*/
+}
+
+.catalog-item a {
+  text-decoration: none;
+  color: @black-color;
+}
+
+.catalog-item__title {
+  margin-top: 27px;
+  margin-left: 27px;
+  margin-bottom: 6px;
   font-size: @font-size;
   line-height: 24px;
   font-weight: bold;
 }
 
-.product-card__specification {
-  padding-left: 28px;
-  padding-bottom: 22px;
+.catalog-item p {
+  margin: 0;
+  margin-left: 27px;
+  margin-bottom: 38px;
   font-size: 13px;
   line-height: 30px;
-  font-weight: normal;
   color: #444444;
-  border-bottom: 1px solid @light-grey-color;
 }
 
-.product-card__price {
-  padding-left: 28px;
+.catalog-item span {
+  display: block;
+  width: 260px;
+  margin-bottom: 25px;
+  padding-left: 27px;
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
 }
 
-.product-card__video-description {
-  padding-bottom: 24px;
+.video {
+  .container();
+  margin-bottom: 58px;
+}
+
+.video__title {
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 23px;
+  padding-left: 90px;
+  font-size: @font-size;
+  line-height: 24px;
+  font-weight: bold;
+  color: @black-color;
+}
+
+.video__description {
+  margin-top: 23px;
+  margin-bottom: 24px;
+  padding-left: 33px;
+  padding-right: 43px;
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
   color: #444444;
 }
 
-.product-card__button {
-  padding-top: 20px;
-  padding-bottom: 16px;
-  padding-left: 26px;
-  padding-right: 26px;
-  font-size: @font-size;
-  line-height: 16px;
-  color: #444444;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 2px solid #444444;
+.video__button {
+  /*вставить сюда миксин*/
+  display: block;
+}
+
+@media @tablet-widths {
+
 }
