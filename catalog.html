@@ -39,40 +39,46 @@
 <!--     <section class="page-title">
       <h1 class="page-title__caption">Каталог товаров</h1>
     </section> -->
-    <main class="catalog">
-      <article class="product-card">
-        <a class="product-card__link" href="#" class="product-card__image-link"><img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
-        <div class="product-card__description">
-          <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
-          <span class="product-card__specification">Рост 30 см, вес 200 г</span>
+    <section class="catalog">
+      <div class="catalog__wrapper">
+        <ul class="catalog__list">
+          <li class="catalog-item">
+            <a href="#">
+              <img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+              <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
+              <p>Рост 30 см, вес 200 г</p>
+              <span>1 200 руб.</span>
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a href="#">
+              <img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+              <h3 class="catalog-item__title">Корзинка для белья</h3>
+              <p>Диаметр 15 см, высота 10 см</p>
+              <span>690 руб.</span>
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a href="#">
+              <img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+              <h3 class="catalog-item__title">Большая корзинка для игрушек</h3>
+              <p>Диаметр 30 см, высота 30 см</p>
+              <span>1 500 руб.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <article class="video">
+        <div class="video__wrapper">
+          <h3 class="video__title">Процесс производства</h3>
+          <div class="video__inner">
+            <video class="video__item" width="260" height="150" src="#" poster="img/video-mobile@1x.jpg"></video>
+          </div>
+          <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a href="#" class="video__button ghost-btn">Сделать заказ</a>
         </div>
-        <span class="product-card__price">1 200 руб.</span>
       </article>
-      <article class="product-card">
-        <a class="product-card__link" href="#" class="product-card__image-link"><img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
-        <div class="product-card__description">
-          <h3 class="product-card__title">Корзинка для белья</h3>
-          <span class="product-card__specification">Диаметр 15 см, высота 10 см</span>
-        </div>
-        <span class="product-card__price">690 руб.</span>
-      </article>
-      <article class="product-card">
-        <a class="product-card__link" href="#" class="product-card__image-link"><img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
-        <div class="product-card__description">
-          <h3 class="product-card__title">Большая корзинка для игрушек</h3>
-          <span class="product-card__specification">Диаметр 30 см, высота 30 см</span>
-        </div>
-        <span class="product-card__price">1 500 руб.</span>
-      </article>
-      <article class="product-card product-card--video">
-        <span class="product-card__name">
-          <h3 class="product-card__title">Процесс производства</h3>
-        </span>
-        <video class="product-card__video" width="260" height="150" src="#" poster="img/video-mobile@1x.jpg"></video>
-        <p class="product-card__video-description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a href="#" class="product-card__button">Сделать заказ</a>
-      </article>
-    </main>
+    </section>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
