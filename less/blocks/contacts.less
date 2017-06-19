@@ -1,8 +1,8 @@
 .contacts {
-  outline: 3px dashed darkred;
+  /*outline: 3px dashed darkred;*/
 }
 
-.contacts__wrapper {
+.contacts__inner {
   .container();
 }
 
@@ -53,19 +53,41 @@
     margin-top: 46px;
     margin-bottom: 57px;
   }
+
   .contacts__title {
     font-size: 43px;
     line-height: 50px;
     font-weight: bold;
     color: @black-color;
   }
+
+  .contacts__map {
+    width: 100%;
+  }
 }
 
 @media @desktop-widths {
   .contacts__wrapper {
+    .container();
+    .clearfix();
     min-height:  457px;
     margin-top: 71px;
     margin-bottom: 105px;
+  }
+
+  .contacts__inner {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contacts__map {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    float: right;
   }
   .contacts__title {
     font-size: 53px;

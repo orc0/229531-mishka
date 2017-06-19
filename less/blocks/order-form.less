@@ -2,6 +2,10 @@
   outline: 2px dotted blue; /* временное выделение блоков, УДАЛИТЬ! */
 }
 
+.order-form__wrapper {
+  .container();
+}
+
 .order-form__description {
   padding-bottom: 25px;
   font-size: 13px;
@@ -75,4 +79,10 @@ input {
   border: 2px solid #444444;
   outline: none;
   background-color: @white-color;
+}
+
+@media @table-widths {
+  .order-form__color-item {
+    background-color: grey;
+  }
 }

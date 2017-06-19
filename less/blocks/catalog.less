@@ -6,6 +6,10 @@
   .container();
 }
 
+.video__wrapper {
+  .container();
+}
+
 .catalog__list {
   margin: 0;
   padding: 0;
@@ -54,7 +58,6 @@
 }
 
 .video {
-  .container();
   margin-bottom: 58px;
 }
 
@@ -86,5 +89,21 @@
 }
 
 @media @tablet-widths {
+  .catalog__wrapper {
+    min-height: 1110px; /*временно*/
+  }
 
+  .video__wrapper {
+    min-height: 743px; /*временно*/
+  }
+}
+
+@media @desktop-widths {
+  .catalog__wrapper {
+    min-height: 660px; /*временно*/
+  }
+
+  .video__wrapper {
+    min-height: 455px; /*временно*/
+  }
 }
