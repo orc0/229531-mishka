@@ -1,29 +1,98 @@
 .contacts {
-  outline: 2px dotted red; /* временное выделение блоков, УДАЛИТЬ! */
+  /*outline: 3px dashed darkred;*/
+}
+
+.contacts__inner {
+  .container();
 }
 
 .contacts__title {
+  /*margin-top: 38px;*/
+  margin bottom: 29px;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
+  color: @black-color;
 }
 
-.contacts__type {
-  font-size: 15px;
+.contacts__block {
+  width: 100%;
   line-height: 30px;
 }
 
-.contacts__value {
-  font-size: 15px;
-  line-height: 30px;
+.contacts__block td {
+  padding-bottom: 33px;
+  vertical-align: top;
+}
+
+.contacts__block td:first-child {
+  min-width: 78px;
 }
 
 .contacts__map {
+  margin-bottom: 39px;
 
   img {
     display: block;
     margin: 0 auto;
     width: 320px;
     height: 457px;
+  }
+}
+
+.contacts__button {
+  width: 260px; // переделать весь этот блок в миксин
+  display: block;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media @tablet-widths {
+  .contacts__wrapper {
+    min-height: 824px; /*временно для сетки*/
+    margin-top: 46px;
+    margin-bottom: 57px;
+  }
+
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+    font-weight: bold;
+    color: @black-color;
+  }
+
+  .contacts__map {
+    width: 100%;
+  }
+}
+
+@media @desktop-widths {
+  .contacts__wrapper {
+    .container();
+    .clearfix();
+    min-height:  457px;
+    margin-top: 71px;
+    margin-bottom: 105px;
+  }
+
+  .contacts__inner {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contacts__map {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    float: right;
+  }
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+    font-weight: bold;
+    color: @black-color;
   }
 }

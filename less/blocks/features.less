@@ -1,5 +1,6 @@
-.features {
-  outline: 2px dotted red; /* временное выделение блоков, УДАЛИТЬ! */
+.features__wrapper {
+  .container();
+  min-height: 800px;
 }
 
 .features__title {
@@ -52,3 +53,14 @@
   }
 }
 
+@media @tablet-widths {
+  .features__wrapper {
+    min-height: 610px; /* временно для сетки */
+  }
+}
+
+@media @desktop-widths {
+  .features__wrapper {
+    min-height: 610px;
+  }
+}

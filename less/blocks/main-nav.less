@@ -1,0 +1,73 @@
+.main-nav {
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-nav__list,
+.main-nav__user-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  border-bottom: 1px solid #ececec;
+
+  a {
+    display: block;
+    padding-top: 28px;
+    padding-bottom: 27px;
+    padding-left: 76px;
+    font-size: @font-size;
+    line-height: 24px;
+    font-weight: bold;
+    color: @black-color;
+    text-decoration: none;
+  }
+
+  &--delivery {
+    display: none;
+  }
+}
+
+.main-nav__user-item {
+  border-bottom: 1px solid #ececec;
+
+  a {
+    display: block;
+    padding-top: 28px;
+    padding-bottom: 27px;
+    padding-left: 76px;
+    font-size: @font-size;
+    line-height: 24px;
+    font-weight: bold;
+    color: @black-color;
+    text-decoration: none;
+  }
+
+  &--search {
+    background: url("../img/icon-search.svg") no-repeat; /* добавить фон подложки? */
+    background-position: 32px 50%;
+  }
+  &--cart {
+    background: url("../img/icon-cart.svg") no-repeat; /* добавить фон подложки? */
+    background-position: 30px 50%;
+  }
+}
+
+.main-nav__user-item {
+
+}
+
+@media @tablet-widths {
+  .main-nav {
+    width: auto;
+    min-height: 88px;
+    margin: 0;
+  }
+
+  .main-nav__wrapper {
+    .container();
+  }
+}
