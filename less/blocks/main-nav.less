@@ -1,15 +1,26 @@
 .main-nav {
-  display: block;
-  width: 320px;
-  margin: 0 auto;
+  background-color: @white-color;
+  color: @black-color;
+/*   display: block;
+width: 320px;
+margin: 0 auto; */
 }
 
 .main-nav__logo {
-  /*height: 78px;*/
+  width: 320px;
+  min-height: 80px;
+  margin: 0 auto;
   padding-top: 21px;
   padding-bottom: 22px;
   border-top: 1px solid @light-grey-color;
   border-bottom: 1px solid @light-grey-color;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0,3;
+  }
 }
 
 .main-nav__logo img {
@@ -19,6 +30,19 @@
   height: 35px;
 }
 
+.main-nav__toggler {
+  position: absolute;
+  top: 31px;
+  right: 30px;
+  display: block;
+  width: 20px;
+  height: 14px;
+  background-color: red; /* заменить потом на белый */
+  font-size: 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
 
 .main-nav__list,
 .main-nav__user-list {
@@ -27,53 +51,50 @@
   list-style: none;
 }
 
-.main-nav__item {
+.main-nav__item,
+.main-nav__user-item {
   border-bottom: 1px solid #ececec;
+}
 
-  a {
-    display: block;
-    padding-top: 28px;
-    padding-bottom: 27px;
-    padding-left: 76px;
-    font-size: @font-size;
-    line-height: 24px;
-    font-weight: bold;
-    color: @black-color;
-    text-decoration: none;
+.main-nav__item a,
+.main-nav__user-item a {
+  display: block;
+  padding-top: 28px;
+  padding-bottom: 27px;
+  padding-left: 76px;
+  font-size: @font-size;
+  line-height: 24px;
+  font-weight: bold;
+  color: @black-color;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
   }
-
-  &--delivery {
-    display: none;
+  &:active {
+    opacity: 0.3;
   }
 }
 
-.main-nav__user-item {
-  border-bottom: 1px solid #ececec;
-
-  a {
-    display: block;
-    padding-top: 28px;
-    padding-bottom: 27px;
-    padding-left: 76px;
-    font-size: @font-size;
-    line-height: 24px;
-    font-weight: bold;
-    color: @black-color;
-    text-decoration: none;
-  }
-
-  &--search {
-    background: url("../img/icon-search.svg") no-repeat; /* добавить фон подложки? */
-    background-position: 32px 50%;
-  }
-  &--cart {
-    background: url("../img/icon-cart.svg") no-repeat; /* добавить фон подложки? */
-    background-position: 30px 50%;
-  }
+.main-nav__item-delivery {
+  display: none;
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #444444;
 }
 
-.main-nav__user-item {
+.main-nav__search-link {
+  background: @white-color url("../img/icon-search.svg") no-repeat;
+  background-position: 32px 50%;
+  /* === ДОБАВИТЬ ХОВЕР === */
+}
 
+.main-nav__cart-link {
+  background: @white-color url("../img/icon-cart.svg") no-repeat;
+  background-position: 30px 50%;
+  /* === ДОБАВИТЬ ХОВЕР === */
 }
 
 @media @tablet-widths {
