@@ -1,38 +1,50 @@
 .promo-block {
-  width: auto;
-  /* margin: 0 auto; */
-  /* background-color: yellow; */
-  background-image: url("../../img/hero-mobile@1x.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  min-height: 282px; /* временно */
+  background: #f9f9f9 url("../../img/hero-mobile@1x.jpg") 50% 0 no-repeat;
+
+  &--catalog {
+    background: #f1f1f1 url() 0 0 no-repeat;
+    margin-bottom: 30px;
+  }
+  &--form {
+    background: #f1f1f1 url() 0 0 no-repeat;
+    margin-bottom: 0;
+  }
 }
 
 .promo-block__wrapper {
-/*   .container(); */
-
+  width: 320px;
+  margin: 0 auto;
 }
 
-.promo-block__header {
+.promo-block__header--desktop {
   display: none;
   margin: 0;
   padding: 0;
   list-style: none;
-
-  a {
-    font-size: 15px;
-    line-height: 24px;
-    font-weight: bold;
-    color: @black-color;
-    text-decoration: none;
-  }
+  margin-top: 20px;
 }
 
+.promo-block__header--desktop a {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+  color: @black-color;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.promo-block__item-delivery {
+  margin-top: 20px;
+  fint-size: 15px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #444444;
+}
 
 .promo-block__title {
   margin: 0;
-  margin-bottom: 120px;
-  padding-top: 75px;
+  margin-bottom: 120px; /*пересчитать!*/
+  padding-top: 74px;    /*пересчитать!*/
   padding-left: 8px;
   padding-right: 8px;
   font-size: 27px;
@@ -40,85 +52,130 @@
   font-weight: bold;
   color: @black-color;
   text-align: center;
+
+  &--catalog {
+    margin: 0;
+    padding-top: 74px;
+    padding-bottom: 73px;
+  }
+  &--form {
+    margin: 0;
+    padding-top: 74px;
+    padding-bottom: 79px;
+  }
 }
 
 .promo-block__footer {
-  min-height: 206px; /* временно */
-  margin: 0;
+  width: 100%;
+  margin: 0 auto;
   padding: 0;
+  list-style: none;
+
+  &::after {
+    .clearfix();
+  }
 }
 
 .promo-block__item {
-  width: auto;
-  list-style: none;
-
-  a {
-    display: inline-block;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    font-size: 19px;
-    line-height: 24px;
-    font-weight: bold;
-    color: @white-color;
-    text-decoration: none;
-    vertical-align: top;
-  }
+  width: 100%;
+  margin: 0;
 
   &--lamp {
     background-color: #63d1bb;
   }
-
+  &--lamp:hover {
+    background-color: #59d5bc;
+  }
   &--cube {
     background-color: #56c3b2;
   }
+  &--cube:hover {
+    background-color: #46c1ae;
+  }
+  &:active a {
+    opacity: 0.3;
+  }
+}
+
+.promo-block__item a {
+  display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  color: @white-color;
+  text-decoration: none;
+  cursor: pointer;
+  vertical-align: top;
 }
 
 @media @tablet-widths {
-  .promo-block {
-    width: auto;
-    min-height: 745px; /* временно */
-    margin: 0;
-  }
 
-  .promo-block__wrapper {
-    .container();
-  }
+.promo-block {
+  width: auto;
+  min-height: 745px; /* временно */
+  margin: 0;
+}
 
-  .promo-block__title {
-    margin: 0;
-    margin-bottom: 370px;
-    font-size: 43px;
-    line-height: 50px;
-  }
+.promo-block__wrapper {
+  .container();
+}
 
-  .promo-block__footer {
-     .clearfix();
-  }
+.promo-block__title {
+  margin: 0;
+  margin-bottom: 370px;
+  padding-top: 100px;
+  font-size: 43px;
+  line-height: 50px;
+}
 
-  .promo-block__item {
-    width: 50%;
-    float: left;
+/*--------------------------*/
+.promo-block__item {
+  width: 50%;
+  float: left;
 
-    a {
-      font-size: 20px;
-      line-height: 30px;
-      padding-top: 30px;
-      padding-bottom: 30px; /* пересчитать после добавления зигзага */
-      padding-left: 36px;
-    }
+  &:hover {
+    transform: translateY(-5px);
   }
 }
 
-@media @desktop-widths {
-  .promo-block__header {
-    display: inline-block;
-  }
+.promo-block__item a {
+font-size: 20px;
+line-height: 30px;
+padding-top: 30px;
+padding-bottom: 29px;
+padding-left: 36px;
+}
 
-  .promo-block__title {
-    margin-bottom: 350px;
-    font-size: 53px;
-    line-height: 57px;
+
+
+}
+
+@media @desktop-widths {
+
+.promo-block__wrapper {
+
+}
+
+.promo-block__header--desktop {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.promo-block__header--desktop li:first-child {
+  margin-right: 60px;
+}
+
+.promo-block__header--desktop li:last-child {
+  margin-left: 494px;
+}
+
+.promo-block__title {
+  margin-bottom: 350px;
+  font-size: 53px;
+  line-height: 57px;
   }
 }
 
